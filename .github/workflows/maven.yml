@@ -24,6 +24,5 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    # حذف الـ cache: maven إذا كنت تواجه مشاكل بها
     - name: Build with Maven
-      run: mvn -B verify --file pom.xml  # استخدام verify للتأكد من التستات قبل البناء
+      run: mvn -B verify --file pom.xml  
